@@ -10,9 +10,9 @@
     tools:context=".Login_Form">
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="150dp"
         android:src="@drawable/download"
-        android:padding="30dp"
+        android:padding="10dp"
 
         />
     <com.google.android.material.textfield.TextInputLayout
@@ -25,14 +25,14 @@
         >
 
         <EditText
+            android:id="@+id/etEmail1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email"
             android:ems="10"
+            android:hint="Email"
             android:inputType="text"
-            android:textSize="20sp"
 
-            />
+            android:textSize="20sp" />
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -45,38 +45,41 @@
         >
 
         <EditText
+            android:id="@+id/pPwd1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
             android:ems="10"
-            android:inputType="textPassword"
-            android:textSize="20sp"
+            android:hint="Password"
+            android:inputType="text"
 
-            />
+            android:textSize="20sp" />
     </com.google.android.material.textfield.TextInputLayout>
+
     <Button
+        android:id="@+id/btLogin"
         android:layout_width="match_parent"
+
         android:layout_height="wrap_content"
-
-        android:text="Login"
-        android:textSize="22sp"
-        android:textColor="#ffffff"
         android:layout_marginTop="40dp"
-        android:background="@drawable/button_rounded">
-
+        android:background="@drawable/button_rounded"
+        android:text="Login"
+        android:textColor="#ffffff"
+        android:textSize="22sp">
 
 
     </Button>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
 
-        android:text="Register"
-        android:textSize="22sp"
-        android:textColor="#ffffff"
+    <Button
+        android:id="@+id/btRegister"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:background="@drawable/button_rounded"
-    android:onClick="btn_signupForm"/>
+        android:onClick="btn_signupForm"
+        android:text="Register"
+        android:textColor="#ffffff"
+        android:textSize="22sp" />
 
 
 

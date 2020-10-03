@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    android:background="@color/cardview_light_background"
     android:orientation="vertical"
     android:padding="30dp"
     tools:context=".Signup_Form">
@@ -19,15 +19,16 @@
         >
 
         <EditText
+            android:id="@+id/etName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:ems="10"
             android:hint="Full Name"
-            android:ems="10"
             android:inputType="text"
-            android:textSize="20sp"
 
-            />
+            android:textSize="20sp" />
     </com.google.android.material.textfield.TextInputLayout>
+
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -38,33 +39,14 @@
         >
 
         <EditText
+            android:id="@+id/etEmail1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="User Name"
             android:ems="10"
-            android:inputType="text"
-            android:textSize="20sp"
-
-            />
-    </com.google.android.material.textfield.TextInputLayout>
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-
-        android:layout_marginTop="5dp"
-        >
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:hint="Email "
-            android:ems="10"
             android:inputType="text"
-            android:textSize="20sp"
 
-            />
+            android:textSize="20sp" />
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -76,14 +58,33 @@
         >
 
         <EditText
+            android:id="@+id/nNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Mobile no "
+            android:inputType="text"
+
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+
+        android:layout_marginTop="5dp"
+        >
+
+        <EditText
+            android:id="@+id/pPwd2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
             android:hint="Password"
-            android:ems="10"
             android:inputType="text"
-            android:textSize="20sp"
 
-            />
+            android:textSize="20sp" />
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -95,21 +96,23 @@
         >
 
         <EditText
+            android:id="@+id/cp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Confirm Password"
             android:ems="10"
+            android:hint="Confirm Password"
             android:inputType="text"
-            android:textSize="20sp"
 
-            />
+            android:textSize="20sp" />
     </com.google.android.material.textfield.TextInputLayout>
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="10sp">
+
         <TextView
+            android:id="@+id/etGen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Gender: "
@@ -118,6 +121,7 @@
         </TextView>
 
         <RadioButton
+            android:id="@+id/etMale"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -127,24 +131,27 @@
         </RadioButton>
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <RadioButton
+            android:id="@+id/etFemale"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:text="Female"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
 
     </RadioGroup>
 
     <Button
+        android:id="@+id/btRegister"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
 
-        android:text="Register"
-        android:textSize="22sp"
-        android:textColor="#ffffff"
+        android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:background="@drawable/button_rounded">
+        android:background="@drawable/button_rounded"
+        android:text="Register"
+        android:textColor="#f1ffed"
+        android:textSize="22sp">
 
     </Button>
 
