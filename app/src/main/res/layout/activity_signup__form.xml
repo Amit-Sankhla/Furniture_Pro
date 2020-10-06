@@ -74,6 +74,7 @@
         android:focusableInTouchMode="true"
 
         android:layout_marginTop="5dp"
+        app:passwordToggleEnabled="true"
         >
 
         <EditText
@@ -82,7 +83,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Password"
-            android:inputType="text"
+            android:inputType="textPassword"
 
             android:textSize="20sp" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -93,6 +94,7 @@
         android:focusableInTouchMode="true"
 
         android:layout_marginTop="5dp"
+        app:passwordToggleEnabled="true"
         >
 
         <EditText
@@ -101,7 +103,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Confirm Password"
-            android:inputType="text"
+            android:inputType="textPassword"
 
             android:textSize="20sp" />
     </com.google.android.material.textfield.TextInputLayout>

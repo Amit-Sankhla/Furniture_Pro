@@ -50,13 +50,13 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Password"
-            android:inputType="text"
+            android:inputType="textPassword"
 
             android:textSize="20sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/btLogin"
+        android:id="@+id/btlogin"
         android:layout_width="match_parent"
 
         android:layout_height="wrap_content"

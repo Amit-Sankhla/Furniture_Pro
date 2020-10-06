@@ -74,7 +74,6 @@ public class Signup_Form extends AppCompatActivity {
 
                 if (Password.length()<8){
                     Toast.makeText(Signup_Form.this, "Password short", Toast.LENGTH_SHORT).show();
-                    return;
 
                 }
                 if (Password.equals(Confirm_Password)) {
